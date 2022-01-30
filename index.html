@@ -145,7 +145,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/28/my-first-blog/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/20220130/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -159,7 +159,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/01/28/my-first-blog/" class="post-title-link" itemprop="url">第一篇博客，记录自己如何搭建博客</a>
+            <a href="/2022/01/30/20220130/" class="post-title-link" itemprop="url">未命名</a>
         </h2>
 
         <div class="post-meta">
@@ -170,8 +170,74 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-01-28 17:37:13 / 修改时间：22:50:04" itemprop="dateCreated datePublished" datetime="2022-01-28T17:37:13+08:00">2022-01-28</time>
+              <time title="创建时间：2022-01-30 14:21:28 / 修改时间：14:36:05" itemprop="dateCreated datePublished" datetime="2022-01-30T14:21:28+08:00">2022-01-30</time>
             </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <hr>
+<h2 id="title-关于freetype在安装中的遇到的问题"><a href="#title-关于freetype在安装中的遇到的问题" class="headerlink" title="title:关于freetype在安装中的遇到的问题"></a>title:关于freetype在安装中的遇到的问题</h2><p>anaconda+pycharm<br>pycharm的解释器已经改成anaconda里面的python了，查看包时也明明可以看到freetype这个包，但是<br>编译的时候，缺一直跳出没有freetype这个module。<br>搜索了许多方法，包括anaconda的卸载重装，添加环境变量，更新pip，但是都没用。<br>解决方法：<br>在anaconda的根目录输入pip install freetype-py<br>注意这个py一定要有，不然会下载失败，<br>然后就可以了。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/28/20220128/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/01/28/20220128/" class="post-title-link" itemprop="url">第一篇博客，记录自己如何搭建博客</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-01-28 17:37:13" itemprop="dateCreated datePublished" datetime="2022-01-28T17:37:13+08:00">2022-01-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-01-30 14:21:11" itemprop="dateModified" datetime="2022-01-30T14:21:11+08:00">2022-01-30</time>
+              </span>
 
           
 
@@ -193,8 +259,8 @@
 <p>二：初始化自己的博客（按照链接3里的教程来）<br>先hexo s，是hexo server ，启动本地预览的意思<br>再hexo g，是hexo generate，生成的意思<br>在本地预览命令以后，才能访问 这个localhost的链接，才可以看到预览效果。<br>下载和更换主题在链接3里提到了</p>
 <p>三：修改配置<br>一定要注意分辨有两个yml格式文件，别改错了<br>还有注意 改配置的时候 冒号后边要加个空格，不然就会不成功<br>像这样：      scheme： Pisces</p>
 <p>四：生成自己的文章<br>命令是  hexo new“文章文件名”<br>mk文件可以用记事本打开<br>修改完以后记得保存</p>
-<p>五：部署到github<br>命令是hexo d  （hexo deploy 部署的意思）<br>经过尝试，要先hexo g，生成，再hexo d，部署，再等待个十分钟差不多的时间才会更新<br>有一步，在输入$  ssh -T <a href="mailto:&#x67;&#105;&#116;&#x40;&#x67;&#105;&#116;&#x68;&#117;&#98;&#46;&#x63;&#111;&#x6d;">&#x67;&#105;&#116;&#x40;&#x67;&#105;&#116;&#x68;&#117;&#98;&#46;&#x63;&#111;&#x6d;</a>命令后<br>可能出现 You’ve successfully authenticated, but GitHub does not provide shell access.的提示，是没有关系的，继续往下走就好了。<br>修改站点配置文件是的语句如：<br>deploy:<br>  type: git<br>  repo: 你复制的地址</p>
-<p>先hexo g再hexo d才能完成更新<br>先hexo g再hexo d才能完成更新<br>先hexo g再hexo d才能完成更新<br>  branch: master(注意，冒号后边都是有一个空格的位置的)</p>
+<p>五：部署到github<br>命令是hexo d  （hexo deploy 部署的意思）<br>经过尝试，要先hexo g，生成，再hexo d，部署，再等待个十分钟差不多的时间才会更新<br>有一步，在输入$  ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;</a>命令后<br>可能出现 You’ve successfully authenticated, but GitHub does not provide shell access.的提示，是没有关系的，继续往下走就好了。<br>修改站点配置文件是的语句如：<br>deploy:<br>  type: git<br>  repo: 你复制的地址<br>  branch: master(注意，冒号后边都是有一个空格的位置的)</p>
+<p>重要的事情说三遍<br>先hexo g再hexo d才能完成更新<br>先hexo g再hexo d才能完成更新<br>先hexo g再hexo d才能完成更新</p>
 
       
     </div>
@@ -347,7 +413,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
